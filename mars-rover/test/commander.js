@@ -32,4 +32,18 @@ describe('commander with 4x8 grid', function() {
             assert.equal(res, '(2, 3, W)');
         });
     });
+
+    describe('command "(0, 0, S) FFF"', function() {
+        it('should return "(0, 0, S) LOST"', function() {
+            const res = commander.processCommands('(0, 0, S) F');
+            assert.equal(res, '(0, 0, S) LOST');
+        });
+    });
+
+    describe('command "(1, 0, S) FFRLF"', function() {
+        it('should return "(1, 0, S) LOST"', function() {
+            const res = commander.processCommands('(1, 0, S) FFRLF');
+            assert.equal(res, '(1, 0, S) LOST');
+        });
+    });
 });

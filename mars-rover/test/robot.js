@@ -3,6 +3,7 @@ const assert = require('assert');
 
 describe('Robot', function() {
     robot = new Robot(0, 1, 'N');
+
     describe('init', function() {
         it('robot x value should be 0', function() {
             assert.equal(robot.x, 0);

@@ -1,12 +1,12 @@
 const orientations = ['N', 'E', 'S', 'W'];
 
 class Robot {
-    constructor(grid, x, y, orientation) {
-        this.grid = grid;
+    constructor(x, y, orientation) {
         this.x = parseInt(x, 10);
         this.y = parseInt(y, 10);
         this.orientation = orientation;
         this.lastKnownPosition = this.position;
+        this.state = 0;
     }
 
     move() {
@@ -44,7 +44,11 @@ class Robot {
     }
 
     get position() {
-        return `(${this.x}, ${this.y}, ${this.orientation})`;
+        if (this.state === 1) {
+            return `${this.lastKnownPosition} LOST`;
+        } else {
+            return `(${this.x}, ${this.y}, ${this.orientation})`;
+        }
     }
 }
 
