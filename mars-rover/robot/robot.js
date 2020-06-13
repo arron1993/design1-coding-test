@@ -27,6 +27,7 @@ class Robot {
     }
 
     rotate(direction) {
+        // use the index of the orientation array to track how we should rotate
         const currentIndex = orientations.indexOf(this.orientation);
         let newIndex;
         if (direction === 'R') {
@@ -35,6 +36,9 @@ class Robot {
             newIndex = currentIndex - 1;
         }
 
+        // if the new index is less than 0 or greater than max length
+        // then when need to wrap around
+        // e.g. -1 becomes 3
         if (newIndex < 0) {
             newIndex = orientations.length - 1;
         } else if (newIndex > orientations.length - 1) {
