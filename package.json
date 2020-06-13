@@ -1,0 +1,25 @@
+{
+  "name": "design1-coding-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arron1993/design1-coding-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arron1993/design1-coding-test/issues"
+  },
+  "homepage": "https://github.com/arron1993/design1-coding-test#readme",
+  "dependencies": {
+    "mocha": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0"
+  }
+}
