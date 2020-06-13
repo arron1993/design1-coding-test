@@ -3,7 +3,7 @@ const assert = require('assert');
 const Grid = require('../grid/grid.js');
 const Commander = require('../commander/commander.js');
 
-describe('commander with 4x8 grid', function() {
+describe('Commander with 4x8 grid', function() {
     grid = new Grid(4, 8);
     commander = new Commander(grid);
 
