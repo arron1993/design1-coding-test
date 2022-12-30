@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/arron1993/design1-coding-test#readme",
   "dependencies": {
-    "mocha": "^8.0.1"
+    "mocha": "^8.4.0"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
